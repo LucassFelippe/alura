@@ -11,6 +11,7 @@
     padding: 0;
 }
 .apresentacao{
+    gap: 82px;
     margin: 5%;
     padding: 3%;
     display: flex;
@@ -19,19 +20,19 @@
 }
 
 .apresentacao-conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .apresentacao-titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 .apresentacao-texto{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
 }
 
@@ -46,7 +47,7 @@
 .apresentacao-subtitulo{
     font-family: "Krona One", sans-serif;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao-links-link{
@@ -54,10 +55,10 @@
     gap: 16px;
     justify-content: center;
     border: 2px solid rgb(11, 141, 223);
-    width: 370px;
+    width: 50%;
     text-align: center;
-    border-radius: 10px;
-    font-size: 24px;
+    border-radius: 8px;
+    font-size: 1.5rem;
     padding: 21.5px 0px;
     text-decoration: none;
     color: white;
@@ -76,6 +77,11 @@ body{
     color: white;
 }
 
+.imagem{
+    width: 50%;
+}
+
+
 .menu{
     padding: 2% 0% 0% 10%;
 }
@@ -88,7 +94,7 @@ body{
 .menu-itens-links{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #22D4FD;
     text-decoration: none;
 }
@@ -100,10 +106,30 @@ span{
 
 .rodape{
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 24px;
     color: black;
     background-color: #22D4FD;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+
+    }
+
+    .menu{
+        padding: 10%;
+    }
+
+    .menu-itens{
+        justify-content: center ;
+    }
+
+    .apresentacao-conteudo{
+        width: auto;
+       
+    }
 }
